@@ -1,37 +1,38 @@
-Sticker DB (MongoDB) :) 
+**Sticker DB (MongoDB)** :) 
 
 
 Structura unui obiect stocat in baza de date NoSQL (format JSON)
 
 <img width="298" height="171" alt="HappyCatGIF" src="https://github.com/user-attachments/assets/b1939e66-7c28-4d33-bcae-21639e276025" />
 
-{
-  "key":         "STK-001",           
-  "name":        "Happy Cat",         
-  "description": "A very happy cat",  
-  "image_url":   "https://...",        
-  "price":       0.99,                
-  "tags":        ["cat", "happy"],    
-  "pack":        "Animals Vol.1",     
-  "rarity":      "common",            
-  "animated":    false,               
-  "created_at":  "2024-01-01T...",    
-  "updated_at":  "2024-01-01T..."     
-}
+> {
+> 
+>    "key":         "STK-001",           cheie unica (string)
+> 
+>    "name":        "Happy Cat",         numele stickerului 
+>  
+>    "description": "A very happy cat",  descriere
+>  
+>    "image_url":   "https://...",       URL imagine/GIF
+>
+>    "price":       0.99,                pret (float)
+>
+>    "tags":        ["cat", "happy"],    lista tags 
+>
+>    "pack":        "Animals Vol.1",     pachetul din care face parte
+>
+>    "rarity":      "common",            **common | uncommon | rare | epic | legendary**  
+>
+>    "animated":    false,               este GIF? (animat)
+>
+>    "created_at":  "2024-01-01T...",    _timestamp creare (format ISO)_  
+>
+>    "updated_at":  "2024-01-01T..."    _timestamp ultima modificare (format ISO)_
+>
+> }
 
-  KEY = cheie unica (string)
-  NAME = numele stickerului 
-  DESCRIPTION = descriere
-  IMAGE_URL = URL imagine/GIF
-  PRICE = pret (float)
-  TAGS = lista tags
-  PACK = pachetul din care face parte
-  RARITY ** = common | uncommon | rare | epic | legendary 
-  ANIMATED = este GIF? (animat)
-  CREATED_AT = timestamp creare (format ISO)
-  UPDATED_AT = timestamp ultima modificare (format ISO)
 
-**instructiuni...
+**instructiuni...**
 
 SERVER 
   > PORNIRE  (docker) --> docker-compose up --build

@@ -3,7 +3,7 @@ Sticker DB (MongoDB) :)
 
 Structura unui obiect stocat in baza de date NoSQL (format JSON)
 
-<img width="498" height="371" alt="HappyCatGIF" src="https://github.com/user-attachments/assets/b1939e66-7c28-4d33-bcae-21639e276025" />
+<img width="298" height="171" alt="HappyCatGIF" src="https://github.com/user-attachments/assets/b1939e66-7c28-4d33-bcae-21639e276025" />
 
 {
   "key":         "STK-001",           // cheie unica (string)
